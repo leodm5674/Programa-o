@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(int argc, char **argv)
+{ 
+    double raiz, numero;
+    
+    printf("Digite o numero que deseja calcular a raiz: \n");
+    scanf("%lf", &numero);
+
+    // Passamos apenas a variável, sem o &
+    raiz = sqrt(numero);
+    
+    // Usamos %lf para mostrar o double e passamos a variável raiz
+    printf("Resultado da raiz será de: %.2lf\n", raiz); 
+    
+    return 0;
+}
